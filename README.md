@@ -1,0 +1,2 @@
+# -germec-bakim
+Bakım programı
