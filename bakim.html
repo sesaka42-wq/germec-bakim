@@ -226,7 +226,7 @@ textarea{min-height:72px;resize:none;line-height:1.5}
 </div>
 
 <script>
-var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbx6p1jWFUmXUajFaVq84pG9so9pwtg9v4xCVKHPfxSlFhEGNPiugt7ScdJXHjkpEbZt/exec';
+var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbzH2ouDP6Z6gqcFSbwIdGbhhXLQo0S3Yvnpuw_BektVZlzyk0HTo_RoEgQCa4vPa-ii/exec';
 var periyot = '';
 var sonuc   = '';
 
@@ -386,7 +386,8 @@ function kaydet(){
     +'&sure='+encodeURIComponent(sure)
     +'&malzeme='+encodeURIComponent(malzeme)
     +'&sonuc='+encodeURIComponent(sonuc)
-    +'&notlar='+encodeURIComponent(kalemMetin+(notlar?(' | '+notlar):''));
+    +'&kalemler='+encodeURIComponent(kalemMetin)
+    +'&notlar='+encodeURIComponent(notlar||'');
 
   window.open(SHEETS_URL+'?'+p, '_blank');
 
